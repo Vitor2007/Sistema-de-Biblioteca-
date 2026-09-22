@@ -147,6 +147,37 @@ void search_book(int book_quantity) {
         return;
     }
 
+    void register_user(int *user_quantity + 1) * sizeof(User));
+        user = realloc(user,(*user_quantity + 1) * sizeof(User));
+        if (user == NULL) {
+            printf("Erro al alocar memoria.\n");
+            return;
+        }
+        User *new_user = &user[*user_quantity];
+        printf("\nDigite o codigo do usuario: ");
+        scanf("%d", &new_user->user_code);
+        clear_buffer();
+
+        char buffer[256];
+
+        printf("Digite o nome do usuario: ");
+        fgets(buffer, sizeof(buffer), stdin);
+        buffer[strcspn(buffer, "\n")] = '\0';
+        new_user->user_name = malloc(strlen(buffer) + 1);
+            if (new_user->user_name == NULL) {
+                printf("Erro ao alocar memoria.\n");
+                return;
+            }
+            strcpy(new_user->user_name, buffer);
+            printf("Digite o telefone do usuario: ");
+            scanf("%d", &new_user->user_phone);
+            clear_buffer();
+
+            *user_quantity += 1;
+
+            printf("\nUsuario cadastrado com sucesso!\n");
+}
+    
     int opcao;
     
     printf("\n===== BUSCAR LIVRO =====\n");
@@ -258,7 +289,7 @@ int main(int argc, char *argv[]) {
                 register_book(&book_quantity);
                 break;
             case 2:
-                //funcao de usuario
+                register_user(&user_quantity);
                 break;
             case 3:
                 //funcao de listagem de livros
@@ -286,6 +317,11 @@ int main(int argc, char *argv[]) {
         free(book[i].book_title);
     }
     free(book);
+
+    for (int i = 0; i < user_quantity; i++) {
+        free(user[i].user_name);
+    }
+    
     free(user); //liberacao dos vetores apos fim de uso
  
     return EXIT_SUCCESS;
