@@ -18,7 +18,7 @@ Ciência e Tecnologia do Estado do Ceará - IFCE.
 - Francine Gomes -
 [`Gomesmaiafran`](https://github.com/Gomesmaiafran)
 - Andressa -
-[`Gomesmaiafran`](https://github.com/andressarocha11-del)
+[`andressarocha11-del`](https://github.com/andressarocha11-del)
 <!--
  
 ### Compilação do Projeto
