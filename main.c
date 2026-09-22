@@ -300,6 +300,9 @@ int main(int argc, char *argv[]) {
         free(book[i].book_author);
         free(book[i].book_title);
     }
+    for (int i = 0; i < user_quantity; i++) {
+        free(user[i].user_name);
+    }
     free(book);
     free(user); //liberacao dos vetores apos fim de uso
  
