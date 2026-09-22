@@ -220,6 +220,21 @@ void search_book(int book_quantity) {
         printf("\nNenhum livro encontrado.\n");
     }
 }
+void book_listing(int book_quantity) {
+    printf("\n--- Lista de Livros ---\n");
+    if (book_quantity == 0) {
+        printf("Nenhum livro cadastrado.\n");
+        return;
+    }
+
+    for (int i = 0; i < book_quantity; i++) {
+        printf("ID: %d | Titulo: %s | Autor: %s | Quantidade Disponivel: %d\n",
+               book[i].book_code,
+               book[i].book_title,
+               book[i].book_author,
+               book[i].book_amount);
+    }
+}
 
 int main(int argc, char *argv[]) {
     int book_quantity = 0;
@@ -261,7 +276,7 @@ int main(int argc, char *argv[]) {
                 //funcao de usuario
                 break;
             case 3:
-                //funcao de listagem de livros
+                book_listing(book_quantity);
                 break;
             case 4:
                 search_book(book_quantity);
