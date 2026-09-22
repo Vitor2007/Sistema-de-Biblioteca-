@@ -17,21 +17,10 @@ Ciência e Tecnologia do Estado do Ceará - IFCE.
 [`ronielefhh`](https://github.com/ronielefhh)
 - Francine Gomes -
 [`Gomesmaiafran`](https://github.com/Gomesmaiafran)
+- Andressa -
+[`Gomesmaiafran`](https://github.com/andressarocha11-del)
 <!--
-    Não há nenhuma informação a respeito do nome de
-    usuário destes sujeitos aqui no GitHub... Se alguém
-    souber disso, faça esse favor para nós, descomente
-    as linhas necessárias e adicione-os conforme a
-    sintaxe geral do documento. Quando não houver mais
-    ninguém, remova este bloco de comentário por completo.
-
-    Sobre a sintaxe necessária, é possível ver exemplos
-    no código da seção «Contribuidores».
--->
-
-<!-- Roniele  - [?] -->
-<!-- Francine - [?] -->
-<!-- Andressa - [?] -->
+ 
 ### Compilação do Projeto
 
 Para qualquer um que for testar o código todo, recomenda-se a compilação utilizando o GCC no terminal (seja via MSYS2 no Windows PowerShell ou no terminal nativo do Linux):
