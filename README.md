@@ -19,7 +19,7 @@ Ciência e Tecnologia do Estado do Ceará - IFCE.
 [`Gomesmaiafran`](https://github.com/Gomesmaiafran)
 - Andressa -
 [`andressarocha11-del`](https://github.com/andressarocha11-del)
-<!--
+  
  
 ### Compilação do Projeto
 
